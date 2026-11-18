@@ -1,6 +1,7 @@
 # Kalshi GTA Researcher — San Andreas (GTA V) Economic & Min-Max Dossier
 
 [![Live Interactive Terminal](https://img.shields.io/badge/Live_Research_Terminal-Open_Interactive_Simulator-00D287?style=for-the-badge)](https://pixel9dev.github.io/kalshi-gta-researcher-report/)
+[![GTA 6 Prediction Dossier](https://img.shields.io/badge/GTA_6_PREDICTION-Leonida_Economy_%26_15_Kalshi_Markets-F43F5E?style=for-the-badge)](GTA%206%20PREDICTION/README.md)
 [![Master Excel Model](https://img.shields.io/badge/Excel_Quant_Model-8--Tab_.XLSX_Workbook-111827?style=for-the-badge&logo=microsoft-excel)](spreadsheets/Kalshi_San_Andreas_Quant_Model.xlsx)
 [![Econometric Notebook](https://img.shields.io/badge/Jupyter_Notebook-PCA_%2B_Ridge_%2B_Monte_Carlo-38BDF8?style=for-the-badge&logo=jupyter)](notebooks/San_Andreas_Econometric_Analysis.ipynb)
 
@@ -48,7 +49,14 @@ Leonida launches at midnight on November 19. Rather than sending a resume claimi
 
 ## Complete Deliverable Index (100% Mapped to Kalshi Role Roadmap)
 
-### I. Core Research Reports (`reports/`)
+### 0. Dedicated Pre-Launch Forecast Suite (`GTA 6 PREDICTION/`)
+- [**`GTA 6 PREDICTION/README.md`**](GTA%206%20PREDICTION/README.md) — **Executive Leonida Forecast Hub** (\$1.79B 24h / \$2.38B 72h / \$3.48B Year-1 revenue trajectory, 4 dedicated dark-mode charts, and 5-tab Leonida `.xlsx` workbook).
+- [**`GTA 6 PREDICTION/01_Leonida_Economy_Predictive_Blueprint.md`**](GTA%206%20PREDICTION/01_Leonida_Economy_Predictive_Blueprint.md) — Economic mapping of all 6 confirmed Leonida regions (*Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia, Mount Kalaga*), Dirty-to-Clean cash laundering thesis via Boobie Ike fronts, Raul Bautista dynamic heist risk-splits, and our **First-6-Hours Live Diagnostic Checklist**.
+- [**`GTA 6 PREDICTION/02_Kalshi_GTA6_Market_Book_and_Edge_Model.md`**](GTA%206%20PREDICTION/02_Kalshi_GTA6_Market_Book_and_Edge_Model.md) — Pricing & alpha edge across **15 resolvable Kalshi GTA VI Event Contracts** + the *Launch-Night Barbell* pair trade.
+- [**`GTA 6 PREDICTION/03_Nov19_Real_World_Macro_and_DoorDash_Forecast.md`**](GTA%206%20PREDICTION/03_Nov19_Real_World_Macro_and_DoorDash_Forecast.md) — 96-hour Thursday–Sunday shock timeline (**2.38M absent U.S. workers**, **+\$434.2M incremental DoorDash `DASH` GOV**).
+- [**`GTA 6 PREDICTION/spreadsheets/Kalshi_GTA6_Leonida_Prediction_Model.xlsx`**](GTA%206%20PREDICTION/spreadsheets/Kalshi_GTA6_Leonida_Prediction_Model.xlsx) — Live-formula Excel workbook for Leonida & Launch Weekend.
+
+### I. Core San Andreas (GTA V) Empirical Baseline Reports (`reports/`)
 1. [**Official State of the San Andreas Economy Address**](reports/01_State_of_the_San_Andreas_Economy_Address.md)  
    *Dual-exchange microstructure (`LCN` vs. `BAWSAQ` as gaming's first proto-prediction market), Story Mode deflation vs. Online +442% hyperinflation, Shark Card FX erosion, and five structural predictions for the **Leonida Economy (GTA VI)**.*
 2. [**Optimal Money-Making Strategy & Forensic Audit of Popular Guides**](reports/02_Optimal_Money_Strategy_and_Guide_Audit.md)  

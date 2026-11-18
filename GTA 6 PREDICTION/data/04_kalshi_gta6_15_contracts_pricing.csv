@@ -1,0 +1,16 @@
+Ticker,Contract_Question,Oracle,Retail_Consensus_Yes,Kalshi_Desk_Fair_Yes,Action_Signal,Edge_Bps
+KXGTAVI-ASP-79,US PS5 Standard Base MSRP > $70 (79.99+ SKU),PlayStation Store US,0.58,0.42,BUY NO,1600
+KXGTAVI-PRE-12B,Pre-Launch Pre-Order Revenue > $1.20B,TTWO IR / DFC,0.54,0.71,BUY YES,1700
+KXGTAVI-REV24H-16B,24-Hour Global Gross Revenue > $1.60B,TTWO Form 8-K,0.59,0.76,STRONG BUY YES,1700
+KXGTAVI-REV72H-22B,72-Hour Global Gross Revenue > $2.20B,TTWO Form 8-K,0.52,0.67,BUY YES,1500
+KXGTAVI-Y1-32B,First-12-Month Gross Bookings > $3.20B,TTWO 10-K/10-Q,0.6,0.73,BUY YES,1300
+KXGTAVI-META-96,Metacritic PS5 Critic Score >= 96,Metacritic (T+14d),0.64,0.72,BUY YES,800
+KXDASH-LAUNCH-15P,US Late-Night Food Delivery +15% YoY Launch Wknd,DoorDash / Second Measure,0.64,0.83,MAX CONVICTION YES,1900
+KXLABOR-PTO-22M,>= 2.20M US Full-Time Workers Absent Nov 19-20,UKG / BLS CPS,0.61,0.78,STRONG BUY YES,1700
+KXTWITCH-CONC-40M,Twitch-Only GTA VI Category > 4.00M Concurrent,TwitchTracker,0.73,0.61,BUY NO,1200
+KXYOUTUBE-VIEWS-250M,YouTube GTA VI Views > 250M in First 24h,YouTube Trends,0.66,0.82,BUY YES,1600
+KXROCKSTAR-DOWN-60M,Rockstar Services >= 60m Down/Limited in Day 1,Rockstar Status,0.7,0.85,BUY YES,1500
+KXSPEEDRUN-W1-18H,Verified Glitchless Any% Beat < 18h 00m in Wk 1,Speedrun.com,0.49,0.27,STRONG BUY NO,2200
+KXLEONIDA-1B-72H,Unmodded Console Player Hits $1B in Story in 72h,Verified Uncut VoD,0.45,0.34,OBSERVE / LEAN NO,1100
+KXLEONIDA-HOTFIX-W1,Rockstar Patches Story Money Glitch in Week 1,Rockstar Patch Notes,0.62,0.44,BUY NO,1800
+KXTTWO-CLOSE-UP5,TTWO Stock Closes >= +5.0% in 5 Trading Days Post-Launch,NASDAQ Close,0.58,0.41,BUY NO,1700

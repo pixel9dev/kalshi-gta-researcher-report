@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalshi × GTA V Research Terminal — San Andreas Macro & Min-Max Model</title>
+  <style>
+    :root {
+      --bg: #090d12;
+      --panel: #111822;
+      --panel-alt: #16202d;
+      --border: #223042;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --kalshi: #00d287;
+      --kalshi-dim: rgba(0, 210, 135, 0.14);
+      --cyan: #38bdf8;
+      --amber: #f59e0b;
+      --red: #f43f5e;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      padding-bottom: 4rem;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(0,210,135,0.08) 0%, rgba(9,13,18,0) 100%);
+      padding: 2rem 1.5rem 1.5rem;
+    }
+    .container { max-width: 1220px; margin: 0 auto; padding: 0 1.2rem; }
+    .badge {
+      display: inline-block;
+      background: var(--kalshi-dim);
+      color: var(--kalshi);
+      border: 1px solid rgba(0,210,135,0.4);
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+    h1 { font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.4rem; }
+    .subtitle { color: var(--muted); max-width: 840px; font-size: 0.98rem; }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+    .kpi {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.15rem;
+    }
+    .kpi-label { font-size: 0.76rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.05em; }
+    .kpi-val { font-size: 1.55rem; font-weight: 800; color: var(--kalshi); margin-top: 0.2rem; }
+    .kpi-sub { font-size: 0.78rem; color: var(--muted); margin-top: 0.2rem; }
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 1.25rem;
+      margin-top: 1.75rem;
+    }
+    @media (max-width: 920px) { .grid-2 { grid-template-columns: 1fr; } }
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.35rem;
+    }
+    .card h2 { font-size: 1.15rem; margin-bottom: 0.3rem; display: flex; align-items: center; gap: 0.5rem; }
+    .card p.desc { color: var(--muted); font-size: 0.86rem; margin-bottom: 1rem; }
+    .control-row { margin-bottom: 0.95rem; }
+    .control-row label { display: flex; justify-content: space-between; font-size: 0.85rem; margin-bottom: 0.3rem; font-weight: 600; }
+    input[type="range"] { width: 100%; accent-color: var(--kalshi); cursor: pointer; }
+    select {
+      width: 100%;
+      background: var(--panel-alt);
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 0.55rem 0.75rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    .toggles {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.45rem;
+      margin: 0.85rem 0;
+    }
+    .toggle-btn {
+      background: var(--panel-alt);
+      border: 1px solid var(--border);
+      color: var(--muted);
+      border-radius: 8px;
+      padding: 0.45rem 0.35rem;
+      font-size: 0.78rem;
+      font-weight: 700;
+      cursor: pointer;
+      text-align: center;
+      transition: 0.15s;
+    }
+    .toggle-btn.active {
+      background: var(--kalshi-dim);
+      color: var(--kalshi);
+      border-color: var(--kalshi);
+    }
+    .sim-out {
+      background: var(--panel-alt);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-top: 0.9rem;
+    }
+    .sim-line { display: flex; justify-content: space-between; padding: 0.32rem 0; font-size: 0.9rem; border-bottom: 1px solid rgba(255,255,255,0.05); }
+    .sim-line:last-child { border-bottom: none; }
+    .warn-box {
+      margin-top: 0.75rem;
+      padding: 0.65rem 0.85rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .warn-overflow { background: rgba(244,63,94,0.14); border: 1px solid rgba(244,63,94,0.45); color: #fda4af; }
+    .warn-safe { background: rgba(0,210,135,0.12); border: 1px solid rgba(0,210,135,0.4); color: #6ee7b7; }
+    table { width: 100%; border-collapse: collapse; margin-top: 0.6rem; font-size: 0.84rem; }
+    th, td { text-align: left; padding: 0.58rem 0.5rem; border-bottom: 1px solid var(--border); }
+    th { color: var(--muted); font-weight: 600; font-size: 0.76rem; text-transform: uppercase; }
+    .pill-yes { background: rgba(0,210,135,0.16); color: var(--kalshi); padding: 0.18rem 0.5rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem; }
+    .pill-no { background: rgba(244,63,94,0.16); color: var(--red); padding: 0.18rem 0.5rem; border-radius: 6px; font-weight: 700; font-size: 0.75rem; }
+    .section-full { margin-top: 1.5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <span class="badge">Kalshi GTA Researcher — Proof-of-Work Terminal</span>
+      <h1>State of the San Andreas Economy &amp; Min-Max Quant Desk</h1>
+      <p class="subtitle">
+        Interactive companion to the San Andreas (GTA V) benchmark research suite: test the 8-stage <strong>82.26x</strong> equity compounding model, audit <code>INT32_MAX ($2,147,483,647)</code> overflow protection, and inspect CFTC-style Kalshi Launch Event Contracts.
+      </p>
+      <div class="kpi-grid">
+        <div class="kpi">
+          <div class="kpi-label">Enhanced Post-Finale Multiplier</div>
+          <div class="kpi-val">82.26x</div>
+          <div class="kpi-sub">Includes hidden post-credits AUG (+100%)</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">Tri-Protagonist Net Worth</div>
+          <div class="kpi-val">$10.82B+</div>
+          <div class="kpi-sub">$6.44B Wallet Cash + $4.38B Equity Vault</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">GTA Online Vehicular CPI</div>
+          <div class="kpi-val">+442%</div>
+          <div class="kpi-sub">$5.42M Cop Cruiser vs $1.00M 2013 Adder</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-label">U.S. Net Launch Output Friction</div>
+          <div class="kpi-val">-$492.6M</div>
+          <div class="kpi-sub">2013 Shock (2026 USD) vs -$1.14B Media Myth</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="grid-2">
+      <div class="card">
+        <h2>Interactive Compounding &amp; Equity Vault Simulator</h2>
+        <p class="desc">Toggle stock legs and platform build to audit why popular 2013 IGN/Reddit guides leave over $1.4B on the table—and when 32-bit integer clamping triggers.</p>
+
+        <div class="control-row">
+          <label>
+            <span>Post-Big Score Seed Capital (Per Character)</span>
+            <span id="seedLabel" style="color:var(--kalshi)">$43,070,000</span>
+          </label>
+          <input type="range" id="seedRange" min="22000000" max="46500000" step="250000" value="43070000" />
+        </div>
+
+        <div class="control-row">
+          <label><span>Game Build / Execution Regime</span></label>
+          <select id="regimeSelect">
+            <option value="enhanced">Enhanced Edition (PC / PS4 / PS5) — Kalshi Optimal Peaks</option>
+            <option value="legacy">Legacy 2013 (PS3 / Xbox 360) — Original Un-Dampened Peaks</option>
+            <option value="guide">Mainstream 2013 Guide Run on Modern PC/PS5 (Autosave Decay)</option>
+          </select>
+        </div>
+
+        <label style="font-size:0.82rem;color:var(--muted);font-weight:600;">Active Compounding Legs (Click to Toggle):</label>
+        <div class="toggles" id="legToggles"></div>
+
+        <div class="sim-out">
+          <div class="sim-line"><span>Cumulative Equity Multiplier:</span><strong id="outMult" style="color:var(--cyan)">82.26x</strong></div>
+          <div class="sim-line"><span>Unclamped Single-Char Purchasing Power:</span><strong id="outUnclamped">$3,542,938,200</strong></div>
+          <div class="sim-line"><span>In-Game Wallet Cash (Clamped at 2^31 - 1):</span><strong id="outWallet" style="color:var(--kalshi)">$2,147,483,647</strong></div>
+          <div class="sim-line"><span>Off-Wallet Equity Vault Reserve:</span><strong id="outVault" style="color:var(--amber)">$1,395,454,553</strong></div>
+          <div class="sim-line"><span>Tri-Protagonist Total Purchasing Power:</span><strong id="outTri">$10,628,814,600</strong></div>
+        </div>
+        <div id="overflowAlert" class="warn-box warn-overflow"></div>
+      </div>
+
+      <div class="card">
+        <h2>Kalshi GTA Launch Event Contracts — Live Alpha Board</h2>
+        <p class="desc">Translating GTA V empirical launch telemetry into priced binary event contracts for November 19, 2026.</p>
+        <table>
+          <thead>
+            <tr>
+              <th>Ticker</th>
+              <th>Mkt</th>
+              <th>Desk</th>
+              <th>Edge</th>
+              <th>Signal</th>
+            </tr>
+          </thead>
+          <tbody id="kalshiTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card section-full">
+      <h2>San Andreas Commercial Real Estate — DCF Payback &amp; Shadow Cost Audit</h2>
+      <p class="desc">1 In-Game Week = 5.60 Real Gameplay Hours. Every $1 spent before The Third Way forfeits <strong>82.26x</strong> in post-finale compounding.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Buyer</th>
+            <th>Price</th>
+            <th>Weekly Cash</th>
+            <th>Weekly Yield</th>
+            <th>Break-Even</th>
+            <th>Pre-Finale Shadow Cost (82.26x)</th>
+            <th>Desk Verdict</th>
+          </tr>
+        </thead>
+        <tbody id="propTable"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script>
+    const INT32_MAX = 2147483647;
+    const legs = [
+      { id: "AUG", enh: 1.00, leg: 1.00, guide: 0.00, active: true },
+      { id: "DEB", enh: 0.55, leg: 0.80, guide: 0.35, active: true },
+      { id: "RWC", enh: 3.00, leg: 3.00, guide: 3.00, active: true },
+      { id: "FRT", enh: 0.25, leg: 0.50, guide: 0.15, active: true },
+      { id: "FAC", enh: 0.33, leg: 0.333, guide: 0.00, active: true },
+      { id: "VAP", enh: 1.00, leg: 1.00, guide: 1.00, active: true },
+      { id: "GCD", enh: 0.50, leg: 0.80, guide: 0.35, active: true },
+      { id: "TNK", enh: 0.33, leg: 0.33, guide: 0.00, active: true },
+    ];
+
+    const fmtUSD = (n) => "$" + Math.round(n).toLocaleString("en-US");
+    const togglesEl = document.getElementById("legToggles");
+
+    function renderToggles() {
+      togglesEl.innerHTML = "";
+      const regime = document.getElementById("regimeSelect").value;
+      legs.forEach((l, idx) => {
+        const rate = regime === "enhanced" ? l.enh : (regime === "legacy" ? l.leg : l.guide);
+        const btn = document.createElement("button");
+        btn.className = "toggle-btn" + (l.active ? " active" : "");
+        btn.innerHTML = `${l.id}<br><span style="font-weight:500;font-size:0.72rem">+${Math.round(rate*100)}%</span>`;
+        btn.onclick = () => { legs[idx].active = !legs[idx].active; updateSim(); renderToggles(); };
+        togglesEl.appendChild(btn);
+      });
+    }
+
+    function updateSim() {
+      const seed = Number(document.getElementById("seedRange").value);
+      const regime = document.getElementById("regimeSelect").value;
+      document.getElementById("seedLabel").textContent = fmtUSD(seed);
+
+      let mult = 1.0;
+      legs.forEach(l => {
+        if (!l.active) return;
+        const r = regime === "enhanced" ? l.enh : (regime === "legacy" ? l.leg : l.guide);
+        mult *= (1 + r);
+      });
+
+      const unclamped = seed * mult;
+      const wallet = Math.min(INT32_MAX, unclamped);
+      const vault = Math.max(0, unclamped - INT32_MAX);
+
+      document.getElementById("outMult").textContent = mult.toFixed(2) + "x";
+      document.getElementById("outUnclamped").textContent = fmtUSD(unclamped);
+      document.getElementById("outWallet").textContent = fmtUSD(wallet);
+      document.getElementById("outVault").textContent = fmtUSD(vault);
+      document.getElementById("outTri").textContent = fmtUSD(unclamped * 3.04);
+
+      const alertBox = document.getElementById("overflowAlert");
+      if (unclamped > INT32_MAX) {
+        alertBox.className = "warn-box warn-overflow";
+        alertBox.textContent = `INT32_MAX CEILING BREACHED: Clicking 'Sell All' will vaporize ${fmtUSD(vault)} per character! Execute Kalshi Equity Vault tranche liquidation to preserve 100% of excess billions.`;
+      } else {
+        alertBox.className = "warn-box warn-safe";
+        alertBox.textContent = `Below INT32_MAX ($2.147B): Short of hard wallet cap by ${fmtUSD(INT32_MAX - unclamped)} per character.`;
+      }
+    }
+
+    document.getElementById("seedRange").addEventListener("input", updateSim);
+    document.getElementById("regimeSelect").addEventListener("change", () => { renderToggles(); updateSim(); });
+
+    const contracts = [
+      ["KXDASH-LAUNCH-12P", 64, 81, "STRONG YES"],
+      ["KXLABOR-ABSENT-2M", 62, 77, "BUY YES"],
+      ["KXSPEEDRUN-ANY-18H", 48, 29, "STRONG NO"],
+      ["KXLEONIDA-PATCH-W1", 63, 46, "BUY NO"],
+      ["KXGTAVI-REV24H-15B", 61, 74, "BUY YES"],
+      ["KXROCKSTAR-OUTAGE", 71, 84, "BUY YES"],
+      ["KXTTWO-EARNINGS-BEAT", 53, 66, "BUY YES"],
+      ["KXGTAVI-REV72H-20B", 56, 68, "BUY YES"],
+      ["KXTWITCH-PEAK-4M", 72, 63, "BUY NO"],
+    ];
+    const kt = document.getElementById("kalshiTable");
+    contracts.forEach(([t, m, d, sig]) => {
+      const edge = Math.abs(d - m);
+      const cls = sig.includes("YES") ? "pill-yes" : "pill-no";
+      kt.innerHTML += `<tr><td><strong>${t}</strong></td><td>${m}¢</td><td style="color:var(--kalshi);font-weight:700">${d}¢</td><td>+${edge}¢</td><td><span class="${cls}">${sig}</span></td></tr>`;
+    });
+
+    const props = [
+      ["Smoke on the Water", "Franklin", 204000, 9300, "4.56%", "21.9 wks (123 hrs)", "$16,781,040", "Best % Yield (Post-Story Only)"],
+      ["Los Santos Customs", "Franklin", 349000, 1600, "0.46%", "218.1 wks (1,221 hrs)", "$28,708,740", "GOATED Utility: Free Car Mods"],
+      ["Downtown Cab Co.", "Franklin", 200000, 2000, "1.00%", "100.0 wks (560 hrs)", "$16,452,000", "GOATED Utility: Free Fast-Travel"],
+      ["Cinema Doppler", "Michael", 10000000, 132200, "1.32%", "75.6 wks (424 hrs)", "$822,600,000", "MID: Post-Chain Cash Sink"],
+      ["Ten Cent Theater", "Michael", 20000000, 264000, "1.32%", "75.8 wks (424 hrs)", "$1,645,200,000", "MID: Post-Chain Cash Sink"],
+      ["Tivoli Cinema", "Michael", 30000000, 142300, "0.47%", "210.8 wks (1,181 hrs)", "$2,467,800,000", "TRAP: Dominated by Doppler"],
+      ["Los Santos Golf Club", "Any", 150000000, 264500, "0.18%", "567.1 wks (3,176 hrs)", "$12,339,000,000", "TRAP: 132 Real Days to Break Even"],
+    ];
+    const pt = document.getElementById("propTable");
+    props.forEach(([n, b, p, w, y, be, sc, v]) => {
+      pt.innerHTML += `<tr><td><strong>${n}</strong></td><td>${b}</td><td>${fmtUSD(p)}</td><td>${fmtUSD(w)}</td><td>${y}</td><td>${be}</td><td style="color:#fda4af">${sc}</td><td>${v}</td></tr>`;
+    });
+
+    renderToggles();
+    updateSim();
+  </script>
+</body>
+</html>

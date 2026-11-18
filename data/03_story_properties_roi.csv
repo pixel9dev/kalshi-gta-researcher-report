@@ -1,0 +1,26 @@
+Property_Name,Category,Eligible_Buyer,Purchase_Price,Weekly_Income,Is_Income_Generating,Weekly_Yield_Pct,BreakEven_InGame_Weeks,BreakEven_Real_Hours,PreFinale_Opportunity_Cost_82x,Desk_Tier,Desk_Notes
+Smoke on the Water,Commercial,Franklin,204000,9300,1,4.559,21.94,122.9,16779785,GOATED_POST_STORY,Highest passive % yield; still pre-finale NPV trap
+Sonar Collections Dock,Salvage/Active,Any,250000,23000,1,9.2,10.87,60.9,20563463,GOATED_POST_STORY,30 nuclear barrels = $690k + $250k bonus ($940k one-off)
+McKenzie Field Hangar,Trafficking/Active,Trevor,150000,12000,1,8.0,12.5,70.0,12338078,GOATED_POST_STORY,Active air/ground runs ($5k+$7k); infinite repeatable
+LSPD Auto Impound,Service/Active,Franklin,150000,2500,1,1.667,60.0,336.0,12338078,MID,$500 per towed vehicle (~5 tows/wk modeled)
+Car Scrapyard,Destruction/Active,Any,275000,3600,1,1.309,76.39,427.8,22619809,MID,$150 per blown-up car (~24 cars/wk modeled)
+Cinema Doppler,Commercial,Michael,10000000,132200,1,1.322,75.64,423.6,822538500,MID,Best cinema yield (1.32%/wk)
+Ten Cent Theater,Commercial,Michael,20000000,264000,1,1.32,75.76,424.3,1645077000,MID,Co-best cinema yield (1.32%/wk)
+The Hen House,Commercial,Any,80000,920,1,1.15,86.96,487.0,6580308,MID,"Cheap Paleto bar, slow payback"
+Pitchers,Commercial,Any,750000,7100,1,0.947,105.63,591.5,61690388,TRAP,Vinewood bar; mid passive yield
+Downtown Cab Co.,Commercial + Perk,Franklin,200000,2000,1,1.0,100.0,560.0,16450770,GOATED_POST_STORY,GOATED utility: Free VIP instant-skip cab rides
+Tequi-la-la,Commercial,Any,2000000,16500,1,0.825,121.21,678.8,164507700,TRAP,West Vinewood rock club; weak yield
+Hookies,Commercial,Michael/Franklin,600000,4700,1,0.783,127.66,714.9,49352310,TRAP,North Chumash diner; sluggish payback
+Tivoli Cinema,Commercial,Michael,30000000,142300,1,0.474,210.82,1180.6,2467615500,TRAP,Strictly dominated by Doppler & Ten Cent
+Los Santos Customs (Route 68),Commercial + Perk,Franklin,349000,1600,1,0.458,218.12,1221.5,28706594,GOATED_POST_STORY,GOATED utility post-story: Free vehicle upgrades for Franklin!
+Los Santos Golf Club,Trophy Veblen Asset,Any,150000000,264500,1,0.176,567.11,3175.8,12338077500,TRAP,"Worst passive ROI in gaming: 3,175.8 real hours to break even"
+Grove Street Garage,Storage,Franklin,30000,0,0,0.0,-1.0,-1.0,2467616,UTILITY_STORAGE,4-car garage storage
+Vinewood Garage,Storage,Michael,30000,0,0,0.0,-1.0,-1.0,2467616,UTILITY_STORAGE,4-car garage storage
+Pillbox Hill Garage,Storage,Trevor,30000,0,0,0.0,-1.0,-1.0,2467616,UTILITY_STORAGE,4-car garage storage
+Puerto Del Sol Marina (Michael),Storage,Michael,75000,0,0,0.0,-1.0,-1.0,6169039,UTILITY_STORAGE,Boat slip
+Puerto Del Sol Marina (Franklin),Storage,Franklin,75000,0,0,0.0,-1.0,-1.0,6169039,UTILITY_STORAGE,Boat slip
+Puerto Del Sol Marina (Trevor),Storage,Trevor,75000,0,0,0.0,-1.0,-1.0,6169039,UTILITY_STORAGE,Boat slip
+Vespucci Helipad (Michael),Storage,Michael,419850,0,0,0.0,-1.0,-1.0,34534279,UTILITY_STORAGE,Helicopter storage
+Vespucci Helipad (Franklin),Storage,Franklin,419850,0,0,0.0,-1.0,-1.0,34534279,UTILITY_STORAGE,Helicopter storage
+LSIA Hangar (Michael),Storage,Michael,1378000,0,0,0.0,-1.0,-1.0,113345805,UTILITY_STORAGE,Aircraft storage + Airport no-wanted-level perk
+LSIA Hangar (Franklin),Storage,Franklin,1378000,0,0,0.0,-1.0,-1.0,113345805,UTILITY_STORAGE,Aircraft storage + Airport no-wanted-level perk

@@ -1,0 +1,13 @@
+Method_Name,Archetype,Startup_CapEx,Cooldown_Minutes,Active_Labor_Minutes,Net_Payout_Per_Cycle,Effective_Active_Dollar_Per_Hour,Solo_Friendly,Desk_Tier
+Active+Passive Meta Rotation (Cayo+Dre+Acid+NC),Hybrid Loop,6850000,0,60,1365000,1365000,1,BROKEN
+Cayo Perico Heist (Solo Kosatka + Sparrow),Active Heist,4015000,144,48,1020000,1275000,1,GOATED
+Acid Lab (Upgraded + Mutt Buy Supplies),Semi-Passive,1000000,180,8,275200,1100000,1,GOATED
+Nightclub (Max Pop Safe + 5 Linked Techs),Passive,5400000,48,6,196000,1300000,1,GOATED
+Cluckin' Bell Farm Raid (Vincent),Zero-CapEx Heist,0,48,48,500000,625000,1,GOATED_STARTER
+Agency VIP Contract (Dr. Dre),Active Story Contract,2010000,48,95,1000000,631579,1,GOATED
+"Bunker (Chumash Upgraded, Single-Vehicle Sale)",Semi-Passive,3390000,140,12,135000,675000,1,MID
+Salvage Yard Vehicle Robberies,Weekly Active,2700000,10080,42,360000,514286,1,MID
+Auto Shop Union Depository Contract,Mini-Heist,1705000,48,28,270000,578571,1,MID
+CEO Special Cargo (Large Warehouse Solo),Active Crate Grind,3300000,5,360,2220000,370000,1,MID
+Rooftop Rumble (2013 Launch Era Benchmark),Legacy Contact Mission,0,0,11,18750,102273,1,HISTORICAL
+MC Document Forgery (Solo Active Delivery),MC Business,1950000,180,28,51000,109286,1,TRAP

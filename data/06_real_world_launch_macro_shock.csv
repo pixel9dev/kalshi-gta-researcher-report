@@ -1,0 +1,14 @@
+Metric,GTA5_Sept2013_Nominal,GTA5_Sept2013_In_2026_USD,GTAVI_Nov2026_Projection,Unit_Notes
+Global_Day1_Units_Millions,11.21,11.21,22.4,Units (M)
+Global_Day1_Revenue_USD_Millions,815.7,1126.8,1792.0,USD ($M)
+Global_72h_Revenue_USD_Millions,1000.0,1381.4,2380.0,USD ($M)
+US_Day1_Active_Players_Millions,5.83,5.83,12.2,Players (M)
+US_Unplanned_Sick_and_PTO_Workers_Millions,1.04,1.04,2.38,Workers (M)
+US_Gross_Missed_or_Distracted_Hours_Millions,10.17,10.17,24.4,Work Hours (M)
+Naive_Media_Headline_Productivity_Loss_USD_M,-824.1,-1138.4,-2684.0,USD ($M)
+Salaried_Deferred_Output_Recovery_USD_M,389.0,537.3,1422.5,USD ($M)
+Overtime_and_Shift_Backfill_Recovery_USD_M,78.5,108.5,214.7,USD ($M)
+True_Net_Unrecovered_Labor_Output_USD_M,-356.6,-492.6,-1046.8,USD ($M)
+US_Food_Delivery_Incremental_GOV_USD_M,118.0,163.0,648.0,USD ($M) [2013 Pizza vs 2026 DoorDash/Uber]
+DoorDash_Specific_Incremental_GOV_USD_M,0.02,0.03,434.2,USD ($M) [DASH ~0% in Sept 2013 -> ~67% in 2026]
+Domestic_Software_Hardware_ISP_Demand_Impulse_USD_M,474.0,654.8,1292.0,USD ($M)

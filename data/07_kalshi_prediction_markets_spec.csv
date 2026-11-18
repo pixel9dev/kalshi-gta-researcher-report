@@ -1,0 +1,11 @@
+Ticker,Contract_Title,Resolution_Oracle,Implied_Market_Yes_Prob,Desk_Model_Fair_Yes_Prob,Trade_Signal,Alpha_Edge_Bps
+KXGTAVI-REV24H-15B,GTA VI > $1.50B Global Revenue in 24h,TTWO Form 8-K / IR,0.61,0.74,BUY YES,1300
+KXGTAVI-REV72H-20B,GTA VI > $2.00B Global Revenue in 72h,TTWO Form 8-K / IR,0.56,0.68,BUY YES,1200
+KXDASH-LAUNCH-12P,US Late-Night Delivery Volume +15% YoY Launch Wknd,DoorDash / Second Measure,0.64,0.81,STRONG BUY YES,1700
+KXTWITCH-PEAK-4M,GTA VI Twitch Category > 4.0M Concurrent Viewers,TwitchTracker Verified,0.72,0.63,BUY NO (YT Split),900
+KXSPEEDRUN-ANY-18H,Week-1 Verified Glitchless Any% Beat < 18h 00m,Speedrun.com / VoD,0.48,0.29,STRONG BUY NO,1900
+KXLABOR-ABSENT-2M,>= 2.0M US Full-Time Workers Absent Nov 19-20,UKG / BLS CPS Series,0.62,0.77,BUY YES (Thu-Fri Bridge),1500
+KXROCKSTAR-OUTAGE,Rockstar Services >= 60m Limited/Down in First 24h,Rockstar Status Page,0.71,0.84,BUY YES,1300
+KXLEONIDA-STOCK-CAP,Unmodded Single-Player Exploit Hits $1B in 72h,Verified Live VoD,0.44,0.58,COMPLIANCE WALL / OBSERVE,1400
+KXLEONIDA-PATCH-W1,Rockstar Hotfixes Single-Player Money Method in Wk 1,Rockstar Patch Notes,0.63,0.46,BUY NO (Online Only),1700
+KXTTWO-EARNINGS-BEAT,TTWO Beats Consensus Q3 FY27 Bookings by >= 10%,TTWO Form 10-Q,0.53,0.66,BUY YES,1300

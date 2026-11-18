@@ -1,0 +1,10 @@
+Stage,Catalyst_Event,Ticker,Exchange,Execution_Timing,Enhanced_Peak_ROI_Pct,Legacy_Peak_ROI_Pct,Mainstream_Guide_Realized_ROI_Pct,Cumulative_Enhanced_Multiplier,Cumulative_Legacy_Multiplier,Michael_Unclamped_Net_Worth,Franklin_Unclamped_Net_Worth,Trevor_Unclamped_Net_Worth,Franklin_Wallet_Cash_INT32,Franklin_Equity_Vault_Reserve,Tri_Protagonist_Combined_Net_Worth,Mainstream_Guide_Single_Char_Wealth,Casual_Player_Single_Char_Wealth
+0,Post-Finale Seed (After Ending C),CASH,Bank,Hold Liquid,0.0,0.0,0.0,1.0,1.0,45952000,43070000,42580000,43070000,0,131602000,31200000,27500000
+1,The Third Way Insurance Crash Rebound,AUG,LCN,Buy Post-Credits Dip (-50%),100.0,100.0,0.0,2.0,2.0,91904000,86140000,85160000,86140000,0,263204000,31200000,29700000
+2,Multi-Target Assassination (Leg A),DEB,LCN,Buy Pre-Mission,55.0,80.0,35.0,3.1,3.6,142451200,133517000,131998000,133517000,0,407966200,42120000,29700000
+3,Multi-Target Assassination (Leg B),RWC,LCN,Buy Post-Crash Trough (~48h),300.0,300.0,300.0,12.4,14.4,569804800,534068000,527992000,534068000,0,1631864800,168480000,29700000
+4,The Vice Assassination (Leg A),FRT,BAWSAQ,Buy Pre-Mission,25.0,50.0,15.0,15.5,21.6,712256000,667585000,659990000,667585000,0,2039831000,193752000,29700000
+5,The Vice Assassination (Leg B),FAC,BAWSAQ,Buy Post-Crash Trough,33.0,33.3,0.0,20.615,28.7928,947300480,887888050,877786700,887888050,0,2712975230,193752000,29700000
+6,The Bus Assassination (Rebound Only),VAP,BAWSAQ,Buy Post-Mission Trough (~24h),100.0,100.0,100.0,41.23,57.5856,1894600960,1775776100,1755573400,1775776100,0,5425950460,387504000,29700000
+7,The Construction Assassination,GCD,LCN,Buy Pre-Mission (Tranche Cap),50.0,80.0,35.0,61.845,103.6541,2841901440,2663664150,2633360100,2147483647,516180503,8138925690,523130400,29700000
+8,Hitch Lift 1 Random Event (Banham Canyon),TNK,BAWSAQ,Buy Pre-Event Ride to LSIA,33.0,33.0,0.0,82.2539,137.8599,3779728915,3542673320,3502368933,2147483647,1395189673,10824771168,523130400,29700000

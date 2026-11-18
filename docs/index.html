@@ -172,6 +172,25 @@
   </header>
 
   <main class="container">
+    <div class="card section-full" id="livePulseCard" style="border-color:rgba(0,210,135,0.45)">
+      <h2>Live Automated Daily Telemetry (Kalshi API v2 + TTWO + DASH + Steam)</h2>
+      <p class="desc" id="livePulseMeta">Synced daily at 09:00 AM EST via GitHub Actions — loading latest snapshot...</p>
+      <div class="kpi-grid" id="liveKpis" style="margin-top:0.6rem;margin-bottom:1rem;"></div>
+      <table>
+        <thead>
+          <tr>
+            <th>Live Kalshi Ticker</th>
+            <th>Series</th>
+            <th>Market</th>
+            <th>Last Price</th>
+            <th>24h Volume</th>
+            <th>Open Interest</th>
+          </tr>
+        </thead>
+        <tbody id="liveMarketsBody"></tbody>
+      </table>
+    </div>
+
     <div class="grid-2">
       <div class="card">
         <h2>Interactive Compounding &amp; Equity Vault Simulator</h2>
@@ -370,6 +389,28 @@
 
     renderToggles();
     updateSim();
+
+    fetch("live_pulse.json")
+      .then(r => r.json())
+      .then(d => {
+        document.getElementById("livePulseMeta").textContent =
+          `Last Automated Check: ${d.updated_utc} | ${d.countdown} | Scheduled Daily at 09:00 AM EST via GitHub Actions`;
+        const ttwoStr = d.ttwo && d.ttwo.price ? `$${d.ttwo.price} (${d.ttwo.change_pct >= 0 ? "+" : ""}${d.ttwo.change_pct}%)` : "N/A";
+        const dashStr = d.dash && d.dash.price ? `$${d.dash.price} (${d.dash.change_pct >= 0 ? "+" : ""}${d.dash.change_pct}%)` : "N/A";
+        document.getElementById("liveKpis").innerHTML = `
+          <div class="kpi"><div class="kpi-label">Live Kalshi GTA 6 OI</div><div class="kpi-val">${Number(d.total_open_interest).toLocaleString()}</div><div class="kpi-sub">${d.active_kalshi_markets} active markets | ${Number(d.total_volume).toLocaleString()} vol</div></div>
+          <div class="kpi"><div class="kpi-label">24h Sales Record Odds</div><div class="kpi-val">${d.sales_record_prob_cents ?? "--"}¢</div><div class="kpi-sub">KXGTASALESRECORD live print</div></div>
+          <div class="kpi"><div class="kpi-label">TTWO / DASH Live Tape</div><div class="kpi-val" style="font-size:1.15rem">${ttwoStr}</div><div class="kpi-sub">DoorDash (DASH): ${dashStr}</div></div>
+          <div class="kpi"><div class="kpi-label">GTA V Steam Concurrent</div><div class="kpi-val">${d.steam_gtav_concurrent ? Number(d.steam_gtav_concurrent).toLocaleString() : "--"}</div><div class="kpi-sub">Verified GTA VI Speedruns: ${d.speedrun_verified_runs}</div></div>
+        `;
+        const tbody = document.getElementById("liveMarketsBody");
+        (d.top_markets || []).forEach(m => {
+          tbody.innerHTML += `<tr><td><strong>${m.Ticker}</strong></td><td>${m.Series}</td><td>${m.Contract_Label}</td><td style="color:var(--kalshi);font-weight:700">${m.Implied_Prob_Pct}¢</td><td>${Number(m.Volume_24h_Contracts).toLocaleString()}</td><td>${Number(m.Open_Interest_Contracts).toLocaleString()}</td></tr>`;
+        });
+      })
+      .catch(() => {
+        document.getElementById("livePulseMeta").textContent = "Live JSON feed available when hosted over HTTP/GitHub Pages.";
+      });
   </script>
 </body>
 </html>

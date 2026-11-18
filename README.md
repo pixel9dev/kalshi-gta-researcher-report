@@ -1,9 +1,9 @@
 # Kalshi GTA Researcher — San Andreas (GTA V) Economic & Min-Max Dossier
 
+[![Daily GTA 6 Pulse](https://img.shields.io/badge/Daily_9AM_EST_Bot-62_Live_Kalshi_GTA6_Markets-00D287?style=for-the-badge)](GTA%206%20PREDICTION/daily_reports/LATEST_DAILY_PULSE.md)
 [![Live Interactive Terminal](https://img.shields.io/badge/Live_Research_Terminal-Open_Interactive_Simulator-00D287?style=for-the-badge)](https://pixel9dev.github.io/kalshi-gta-researcher-report/)
 [![GTA 6 Prediction Dossier](https://img.shields.io/badge/GTA_6_PREDICTION-Leonida_Economy_%26_15_Kalshi_Markets-F43F5E?style=for-the-badge)](GTA%206%20PREDICTION/README.md)
 [![Master Excel Model](https://img.shields.io/badge/Excel_Quant_Model-8--Tab_.XLSX_Workbook-111827?style=for-the-badge&logo=microsoft-excel)](spreadsheets/Kalshi_San_Andreas_Quant_Model.xlsx)
-[![Econometric Notebook](https://img.shields.io/badge/Jupyter_Notebook-PCA_%2B_Ridge_%2B_Monte_Carlo-38BDF8?style=for-the-badge&logo=jupyter)](notebooks/San_Andreas_Econometric_Analysis.ipynb)
 
 > **"We want the person who finds the optimal money-making strategy, builds a spreadsheet to prove it, and gets accused of ruining the game for everyone else."**  
 > — *Kalshi, GTA VI Researcher Role Mandate*

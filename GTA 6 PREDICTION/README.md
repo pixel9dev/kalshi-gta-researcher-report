@@ -1,7 +1,19 @@
 # GTA 6 PREDICTION — State of Leonida Economy, Launch Shock & Kalshi Market Book
 
+[![Latest Daily Pulse](https://img.shields.io/badge/Live_Daily_Automation-Read_Latest_09:00_EST_Pulse-F59E0B?style=for-the-badge)](daily_reports/LATEST_DAILY_PULSE.md)
+[![Automation Config](https://img.shields.io/badge/Automation_Pipeline-GitHub_Actions_%2B_Python_Bot-38BDF8?style=for-the-badge)](automation/README_AUTOMATION.md)
 [![Leonida Excel Model](https://img.shields.io/badge/Leonida_Excel_Model-5--Tab_.XLSX_Forecast-00D287?style=for-the-badge&logo=microsoft-excel)](spreadsheets/Kalshi_GTA6_Leonida_Prediction_Model.xlsx)
 [![Back to San Andreas Baseline](https://img.shields.io/badge/Empirical_Baseline-San_Andreas_(GTA_V)_Dossier-111827?style=for-the-badge)](../README.md)
+
+---
+
+## Automated Daily Live Kalshi × GTA VI Pulse (`09:00 AM EST` Cron)
+
+Scheduled daily at **9:00 AM EST (`14:00 UTC` / `7:30 PM IST`)**, [`automation/gta6_daily_check.yml`](automation/gta6_daily_check.yml) + [`src/gta6_daily_check.py`](../src/gta6_daily_check.py) polls **Kalshi's live Trade API v2** (`62+` open GTA VI contracts, `2.65M+` open interest), **`TTWO` & `DASH` NASDAQ quotes**, **Steam concurrent players**, and **Speedrun.com** verification, then auto-commits:
+- [**`daily_reports/LATEST_DAILY_PULSE.md`**](daily_reports/LATEST_DAILY_PULSE.md) — Today's auto-generated desk report (plus dated archive `YYYY-MM-DD_Daily_Leonida_Pulse.md`)
+- [**`daily_reports/daily_telemetry_log.csv`**](daily_reports/daily_telemetry_log.csv) & [**`daily_reports/live_kalshi_gta6_orderbook.csv`**](daily_reports/live_kalshi_gta6_orderbook.csv) — Growing daily time-series & orderbook snapshots
+
+![Live Kalshi GTA VI Daily Pulse](charts/05_live_kalshi_gta6_daily_pulse.png)
 
 > **Pre-Launch Quantitative Dossier (`T-12 Hours` to Midnight Launch, November 19, 2026)**  
 > Using 13 years of verified *GTA V / GTA Online* & *RDR2* economic telemetry alongside Rockstar's confirmed Leonida disclosures (**Lucia Caminos, Jason Duval, Raul Bautista, Boobie Ike, Brian Heder**, and the six confirmed regions of Leonida), this directory contains our desk's **ex-ante falsifiable predictions, Day-1 exploit-hunting protocol, 96-hour U.S. labor & DoorDash shock curve, and 15 priced Kalshi Event Contracts**.

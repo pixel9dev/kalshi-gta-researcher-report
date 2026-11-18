@@ -1,0 +1,63 @@
+Series,Category,Ticker,Contract_Label,Subtitle,Last_Price_Cents,Yes_Bid_Cents,Yes_Ask_Cents,Implied_Prob_Pct,Volume_24h_Contracts,Total_Volume_Contracts,Open_Interest_Contracts,Status
+KXGTA6,Release Window Milestones,KXGTA6-26NOV30,"WIll GTA6 be released by Nov 30, 2026? [Before December 2026]",Before December 2026,99.0,99.0,100.0,99.0,125082.7,1904048.6,1027699.5,active
+KXGTA6ONTIME,Launch On Time (Nov 19),KXGTA6ONTIME-26NOV19,"Will GTA 6 be released by Nov 19, 2026? [By Nov 19, 2026]","By Nov 19, 2026",99.0,98.0,99.0,99.0,298304.9,840089.4,694113.8,active
+KXGTA6,Release Window Milestones,GTA6-26DEC31,"WIll GTA6 be released by Dec 31, 2026? [Before 2027]",Before 2027,99.0,99.0,100.0,99.0,10166.8,1260256.2,447296.3,active
+KXGTAONLINE,GTA VI Online Release,KXGTAONLINE-GTA6ONLINE-27,Will Rockstar Games release GTA VI Online to the public before 2027? [Before 2027],Before 2027,18.0,16.0,18.0,18.0,76145.0,577659.7,147951.2,active
+KXGTASALESRECORD,24h Gaming Revenue Record,KXGTASALESRECORD-27JAN31-GTA6,Will GTA 6 break the record for the highest-grossing videogame in 24 hours?,Yes,98.0,98.0,100.0,98.0,23402.6,139457.0,103086.6,active
+KXGTA6,Release Window Milestones,KXGTA6-27JUL01,"WIll GTA6 be released by Jul 1, 2027? [Before July 2027]",Before July 2027,99.0,99.0,100.0,99.0,4239.3,198430.5,81176.3,active
+KXGTA6,Release Window Milestones,KXGTA6-28JAN01,"WIll GTA6 be released by Jan 1, 2028? [Before January 2028]",Before January 2028,99.0,99.0,100.0,99.0,555.0,161100.0,74814.5,active
+KXGTAONLINE,GTA VI Online Release,KXGTAONLINE-GTA6ONLINE-27B,Will Rockstar Games release GTA VI Online to the public before July 2027? [Before July 2027],Before July 2027,69.0,68.0,69.0,69.0,2957.2,19223.5,8851.2,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-SIC,What songs will be on the GTA 6 radio at launch? [Sicko Mode],Sicko Mode,36.0,35.0,40.0,36.0,319.7,19304.8,7534.2,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-PEP,What songs will be on the GTA 6 radio at launch? [Pepas],Pepas,81.0,79.0,80.0,81.0,304.4,16300.1,6983.9,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-BLI,What songs will be on the GTA 6 radio at launch? [Blinding Lights],Blinding Lights,35.0,33.0,35.0,35.0,204.6,16975.4,5463.6,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-BAD,What songs will be on the GTA 6 radio at launch? [Bad and Boujee],Bad and Boujee,18.0,13.0,15.0,18.0,636.9,11277.5,5397.8,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-DES,What songs will be on the GTA 6 radio at launch? [Despacito],Despacito,13.0,9.0,13.0,13.0,538.8,9045.5,5165.0,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-MAS,What songs will be on the GTA 6 radio at launch? [Mask Off],Mask Off,10.0,10.0,14.0,10.0,398.7,7945.2,3966.6,active
+KXGTAPCRELEASE,GTA VI PC Release Window,KXGTAPCRELEASE-GTA6PC-28,Will Rockstar Games release the PC version of GTA 6 to the public before 2028? [Before 2028],Before 2028,82.0,79.0,83.0,82.0,93.1,7377.3,3722.2,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-ROC,What songs will be on the GTA 6 radio at launch? [Rockstar],Rockstar,11.0,10.0,14.0,11.0,613.6,8250.7,3652.6,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-MOB,What songs will be on the GTA 6 radio at launch? [Mo Bamba],Mo Bamba,14.0,11.0,15.0,14.0,603.0,5382.9,3268.5,active
+KXGTAONLINE,GTA VI Online Release,KXGTAONLINE-GTA6ONLINE-28,Will Rockstar Games release GTA VI Online to the public before 2028? [Before 2028],Before 2028,91.0,90.0,91.0,91.0,979.4,7762.3,2794.9,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-GOD,What songs will be on the GTA 6 radio at launch? [God’s Plan],God’s Plan,15.0,10.0,15.0,15.0,431.3,6598.8,2756.1,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-ASI,What songs will be on the GTA 6 radio at launch? [As It Was],As It Was,13.0,10.0,13.0,13.0,274.1,5158.6,2274.7,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-LOO,What songs will be on the GTA 6 radio at launch? [Look at Me!],Look at Me!,15.0,12.0,14.0,15.0,163.2,7068.7,2122.4,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-XOT,What songs will be on the GTA 6 radio at launch? [XO Tour Llif3],XO Tour Llif3,14.0,11.0,13.0,14.0,200.5,2931.6,1670.1,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-STA,What songs will be on the GTA 6 radio at launch? [Stay],Stay,10.0,8.0,14.0,10.0,6.0,2753.8,1448.8,active
+KXGTA6SONGS,Launch Radio Tracklist,KXGTA6SONGS-30-SHA,What songs will be on the GTA 6 radio at launch? [Shape of You],Shape of You,15.0,10.0,13.0,15.0,0.6,2313.8,1249.6,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T9000000,GTA VI · 9 million+ sold-in units before Jan 2027? [At least 9 million],At least 9 million,88.0,87.0,88.0,88.0,1128.1,1128.1,1026.1,active
+KXGTAPCRELEASE,GTA VI PC Release Window,KXGTAPCRELEASE-GTA6PC-27JUL,"Will Rockstar Games release the PC version of GTA 6 to the public before Jul 1, 2027 [Before July 2027]",Before July 2027,53.0,52.0,53.0,53.0,376.4,962.2,924.2,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T24000000,GTA VI · 24 million+ sold-in units before Jan 2027? [At least 24 million],At least 24 million,78.0,72.0,78.0,78.0,681.4,681.4,669.3,active
+KXGTAPCRELEASE,GTA VI PC Release Window,KXGTAPCRELEASE-GTA6PC-27FEB,"Will Rockstar Games release the PC version of GTA 6 to the public before Feb 1, 2027? [Before February 2027]",Before February 2027,15.0,10.0,15.0,15.0,275.8,746.5,556.7,active
+KXGTAPCRELEASE,GTA VI PC Release Window,KXGTAPCRELEASE-GTA6PC-27AUG,"Will Rockstar Games release the PC version of GTA 6 to the public before Aug 1, 2027 [Before August 2027]",Before August 2027,56.0,50.0,56.0,56.0,75.6,741.0,484.3,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01MAR27-T50000000,GTA VI · 50 million+ sold-in units before Mar 2027? [At least 50 million],At least 50 million,42.0,38.0,42.0,42.0,433.1,433.1,433.1,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T30000000,GTA VI · 30 million+ sold-in units before Jan 2027? [At least 30 million],At least 30 million,66.0,64.0,70.0,66.0,432.7,432.7,432.3,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T12000000,GTA VI · 12 million+ sold-in units before Jan 2027? [At least 12 million],At least 12 million,84.0,81.0,83.0,84.0,501.8,501.8,401.8,active
+KXGTAPCRELEASE,GTA VI PC Release Window,KXGTAPCRELEASE-GTA6PC-27APR,"Will Rockstar Games release the PC version of GTA 6 to the public before Apr 1, 2027 [Before April 2027]",Before April 2027,40.0,35.0,41.0,40.0,185.4,459.9,394.5,active
+KXGTAPCRELEASE,GTA VI PC Release Window,KXGTAPCRELEASE-GTA6PC-27SEP,"Will Rockstar Games release the PC version of GTA 6 to the public before Sep 1, 2027 [Before September 2027]",Before September 2027,53.0,53.0,61.0,53.0,316.0,423.0,283.5,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T18000000,GTA VI · 18 million+ sold-in units before Jan 2027? [At least 18 million],At least 18 million,80.0,78.0,80.0,80.0,312.3,312.3,281.1,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T45000000,GTA VI · 45 million+ sold-in units before Jan 2027? [At least 45 million],At least 45 million,31.0,25.0,34.0,31.0,265.6,265.6,265.6,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T21000000,GTA VI · 21 million+ sold-in units before Jan 2027? [At least 21 million],At least 21 million,79.0,78.0,80.0,79.0,264.4,264.4,259.4,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T15000000,GTA VI · 15 million+ sold-in units before Jan 2027? [At least 15 million],At least 15 million,84.0,80.0,85.0,84.0,507.2,507.2,250.7,active
+KXGTAPCRELEASE,GTA VI PC Release Window,KXGTAPCRELEASE-GTA6PC-27JUN,"Will Rockstar Games release the PC version of GTA 6 to the public before Jun 1, 2027 [Before June 2027]",Before June 2027,41.0,40.0,48.0,41.0,164.5,321.7,223.8,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T50000000,GTA VI · 50 million+ sold-in units before Jan 2027? [At least 50 million],At least 50 million,26.0,18.0,27.0,26.0,206.6,206.6,206.6,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T39000000,GTA VI · 39 million+ sold-in units before Jan 2027? [At least 39 million],At least 39 million,47.0,39.0,48.0,47.0,195.0,195.0,195.0,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T36000000,GTA VI · 36 million+ sold-in units before Jan 2027? [At least 36 million],At least 36 million,46.0,48.0,56.0,46.0,262.0,262.0,182.9,active
+KXGTAPCRELEASE,GTA VI PC Release Window,KXGTAPCRELEASE-GTA6PC-27MAR,"Will Rockstar Games release the PC version of GTA 6 to the public before Mar 1, 2027 [Before March 2027]",Before March 2027,25.0,19.0,26.0,25.0,33.5,149.9,149.9,active
+KXGTAPCRELEASE,GTA VI PC Release Window,KXGTAPCRELEASE-GTA6PC-27MAY,"Will Rockstar Games release the PC version of GTA 6 to the public before May 1, 2027 [Before May 2027]",Before May 2027,43.0,37.0,45.0,43.0,113.1,114.3,114.3,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T27000000,GTA VI · 27 million+ sold-in units before Jan 2027? [At least 27 million],At least 27 million,63.0,66.0,74.0,63.0,103.9,103.9,103.9,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T42000000,GTA VI · 42 million+ sold-in units before Jan 2027? [At least 42 million],At least 42 million,40.0,33.0,42.0,40.0,92.0,92.0,92.0,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T33000000,GTA VI · 33 million+ sold-in units before Jan 2027? [At least 33 million],At least 33 million,62.0,54.0,63.0,62.0,58.6,58.6,58.6,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01MAR27-T48000000,GTA VI · 48 million+ sold-in units before Mar 2027? [At least 48 million],At least 48 million,45.0,36.0,45.0,45.0,10.7,10.7,10.7,active
+KXGTAPCRELEASE,GTA VI PC Release Window,KXGTAPCRELEASE-GTA6PC-27DEC,"Will Rockstar Games release the PC version of GTA 6 to the public before Dec 1, 2027 [Before December 2027]",Before December 2027,77.0,71.0,78.0,77.0,10.0,10.0,10.0,active
+KXGTAPCRELEASE,GTA VI PC Release Window,KXGTAPCRELEASE-GTA6PC-27NOV,"Will Rockstar Games release the PC version of GTA 6 to the public before Nov 1, 2027 [Before November 2027]",Before November 2027,72.0,63.0,71.0,72.0,10.0,10.0,10.0,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01MAR27-T42000000,GTA VI · 42 million+ sold-in units before Mar 2027? [At least 42 million],At least 42 million,60.0,50.0,60.0,60.0,4.3,4.3,4.3,active
+KXGTA6STORY,Story DLC / Content Window,KXGTA6STORY-01JAN30-01OCT28,"GTA VI · New story content announced before Oct 1, 2028? [Before Oct 1, 2028]","Before Oct 1, 2028",35.0,25.0,35.0,35.0,0.1,0.1,0.1,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01JAN27-T48000000,GTA VI · 48 million+ sold-in units before Jan 2027? [At least 48 million],At least 48 million,0.0,18.0,28.0,23.0,0.0,0.0,0.0,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01MAR27-T9000000,GTA VI · 9 million+ sold-in units before Mar 2027? [At least 9 million],At least 9 million,0.0,91.0,99.0,95.0,0.0,0.0,0.0,active
+KXGTA6UNITS,GTA VI Units Sold-In,KXGTA6UNITS-01MAR27-T45000000,GTA VI · 45 million+ sold-in units before Mar 2027? [At least 45 million],At least 45 million,0.0,42.0,52.0,47.0,0.0,0.0,0.0,active
+KXGTAPCRELEASE,GTA VI PC Release Window,KXGTAPCRELEASE-GTA6PC-27OCT,"Will Rockstar Games release the PC version of GTA 6 to the public before Oct 1, 2027 [Before October 2027]",Before October 2027,0.0,58.0,67.0,62.5,0.0,0.0,0.0,active
+KXGTA6STORY,Story DLC / Content Window,KXGTA6STORY-01JAN30-01OCT27,"GTA VI · New story content announced before Oct 1, 2027? [Before Oct 1, 2027]","Before Oct 1, 2027",0.0,12.0,22.0,17.0,0.0,0.0,0.0,active
+KXGTA6STORY,Story DLC / Content Window,KXGTA6STORY-01JAN30-01JUL28,"GTA VI · New story content announced before Jul 1, 2028? [Before Jul 1, 2028]","Before Jul 1, 2028",0.0,22.0,32.0,27.0,0.0,0.0,0.0,active
+KXGTA6STORY,Story DLC / Content Window,KXGTA6STORY-01JAN30-01JUL27,"GTA VI · New story content announced before Jul 1, 2027? [Before Jul 1, 2027]","Before Jul 1, 2027",0.0,8.0,18.0,13.0,0.0,0.0,0.0,active
+KXGTA6STORY,Story DLC / Content Window,KXGTA6STORY-01JAN30-01JAN28,"GTA VI · New story content announced before Jan 1, 2028? [Before Jan 1, 2028]","Before Jan 1, 2028",0.0,16.0,26.0,21.0,0.0,0.0,0.0,active
+KXGTA6STORY,Story DLC / Content Window,KXGTA6STORY-01JAN30-01APR28,"GTA VI · New story content announced before Apr 1, 2028? [Before Apr 1, 2028]","Before Apr 1, 2028",0.0,19.0,29.0,24.0,0.0,0.0,0.0,active
+KXGTA6STORY,Story DLC / Content Window,KXGTA6STORY-01JAN30-01APR27,"GTA VI · New story content announced before Apr 1, 2027? [Before Apr 1, 2027]","Before Apr 1, 2027",0.0,3.0,13.0,8.0,0.0,0.0,0.0,active
